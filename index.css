@@ -9,6 +9,12 @@
 
 button {
     cursor: pointer;
+
+    transition: color 0.2s;
+}
+
+button:hover {
+    color: rgb(219, 82, 77);
 }
 
 .buttons {
@@ -30,12 +36,25 @@ button {
     font-size: 1.5rem;
     width: 100%;
     text-align: center;
+
+    border: 2px solid #dedede;
+    border-radius: 4px;
+}
+
+.edit-time input:focus {
+    border-color: rgb(219, 82, 77);
 }
 
 h1 {
     cursor: pointer;
     text-align: center;
     text-transform: capitalize;
+
+    transition: color 0.2s;
+}
+
+h1:hover {
+    color: rgb(219, 82, 77);
 }
 
 .timer {
