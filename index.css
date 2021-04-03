@@ -1,10 +1,14 @@
 * {
-    font-family: sans-serif;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .container {
     margin: auto;
     width: 300px;
+}
+
+button {
+    cursor: pointer;
 }
 
 .buttons {
@@ -68,9 +72,9 @@ h1 {
     stroke: #dedede;
 }
 
-.timer-path-green {
+.timer-path-color {
     stroke-width: 7px;
-    stroke: #50fa7b;
+    stroke: rgb(219, 82, 77);
     stroke-linecap: round;
     transform: rotate(90deg);
     transform-origin: center;

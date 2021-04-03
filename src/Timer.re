@@ -14,7 +14,7 @@ let make = (~seconds, ~maxTime) =>
       <g className="timer-circle">
         <circle className="timer-path-gray" cx="50" cy="50" r="45" />
         <path
-          className="timer-path-green"
+          className="timer-path-color"
           d="M 50, 50
           m -45, 0
           a 45,45 0 1,0 90,0
