@@ -1,61 +1,133 @@
-# ReasonReact Template & Examples
 
-This is:
-- A template for your new ReasonReact project.
-- A collection of thin examples illustrating ReasonReact usage.
-- Extra helper documentation for ReasonReact (full ReasonReact docs [here](https://reasonml.github.io/reason-react/)).
+<p align="center">
+  <a href="https://www.twitter.com/tiagod3p/">
+    <img alt="Follow on Twitter" src="https://img.shields.io/twitter/follow/tiagod3p?label=Follow&style=social">
+  </a>
+  
+  <a href="https://github.com/tiagod3p/pomodoro-reason/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/tiagod3p/pomodoro-reason">
+  </a>
+    
+   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 
-`src` contains 4 sub-folders, each an independent, self-contained ReasonReact example. Feel free to delete any of them and shape this into your project! This template's more malleable than you might be used to =).
+   <a href="https://github.com/tiagod3p/pomodoro-reason/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/tiagod3p/pomodoro-reason?style=social">
+  </a>
 
-The point of this template and examples is to let you understand and personally tweak the entirely of it. We **don't** give you an opaque, elaborate mega build setup just to put some boxes on the screen. It strikes to stay transparent, learnable, and simple. You're encouraged to read every file; it's a great feeling, having the full picture of what you're using and being able to touch any part.
+  <a href="https://www.linkedin.com/in/tiagovidaldepaula/">
+    <img alt="Built by Tiago" src="https://img.shields.io/badge/built%20by-Tiago%20Vidal-%237519C1">
+  </a>
+</p>
+<h1 align="center">
+    <img alt="Pomodoro" title="#pomodoro-reason" src="./assets/banner.png" />
+</h1>
 
-## Run
+<h4 align="center"> 
+	🚧 Pomodoro :tomato: In progress... 🚀 🚧
+</h4>
 
-```sh
-npm install
-npm run server
-# in a new tab
-npm start
+<p align="center">
+ <a href="#-about-the-project">About</a> •
+ <a href="#-layout">Layout</a> • 
+ <a href="#-how-it-works">How it works</a> • 
+ <a href="#-tech-stack">Tech Stack</a> • 
+ <a href="#-how-to-contribute">How to contribute</a> • 
+ <a href="#-author">Author</a> • 
+ <a href="#user-content--license">License</a>
+</p>
+
+
+## 💻 About the project
+
+:tomato: Pomodoro is an timer that helps you to focus on complete your tasks by setting a default time to work and a default time to rest.
+
+---
+
+## 🎨 Layout
+
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="Image of pomodoro website" title="#pomodoro-reason" src="./assets/pomodoro.png" width="400px">
+</p>
+---
+
+## 🚀 How it works
+
+### Pre-requisites
+
+Before you begin, you will need to have the following tools installed on your machine:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+In addition, it is good to have an editor to work with the code like [VSCode](https://code.visualstudio.com/)
+
+
+#### 🧭 Running the web application
+
+```bash
+
+# Clone this repository
+$ git clone https://github.com/tiagod3p/pomodoro-reason.git
+
+# Access the project folder in your terminal
+$ cd pomodoro-reason
+
+# Install the dependencies
+$ npm install
+
+# Open 2 terminal windows
+# Run server
+$ npm run server
+
+# Run the application in other tab of terminal
+$ npm start
+
+# The application will open on the port: 8000 - go to http://localhost:8000
+
 ```
 
-Open a new web page to `http://localhost:8000/`. Change any `.re` file in `src` to see the page auto-reload. **You don't need any bundler when you're developing**!
+---
 
-**How come we don't need any bundler during development**? We highly encourage you to open up `index.html` to check for yourself!
+## 🛠 Tech Stack
 
-# Features Used
+The following tools were used in the construction of the project:
 
-|                           | Blinking Greeting | Reducer from ReactJS Docs | Fetch Dog Pictures | Reason Using JS Using Reason |
-|---------------------------|-------------------|---------------------------|--------------------|------------------------------|
-| No props                  |                   | ✓                         |                    |                              |
-| Has props                 |                   |                           |                    | ✓                            |
-| Children props            | ✓                 |                           |                    |                              |
-| No state                  |                   |                           |                    | ✓                            |
-| Has state                 | ✓                 |                           |  ✓                 |                              |
-| Has state with useReducer |                   | ✓                         |                    |                              |
-| ReasonReact using ReactJS |                   |                           |                    | ✓                            |
-| ReactJS using ReasonReact |                   |                           |                    | ✓                            |
-| useEffect                 | ✓                 |                           |  ✓                 |                              |
-| Dom attribute             | ✓                 | ✓                         |                    | ✓                            |
-| Styling                   | ✓                 | ✓                         |  ✓                 | ✓                            |
-| React.array               |                   |                           |  ✓                 |                              |
+#### **Website**
+-   **[ReasonML](https://reasonml.github.io/)**
+-   **[ReScript](https://rescript-lang.org/)**
+-   **[Node.js](https://nodejs.org/)**
 
-# Bundle for Production
 
-We've included a convenience `UNUSED_webpack.config.js`, in case you want to ship your project to production. You can rename and/or remove that in favor of other bundlers, e.g. Rollup.
+---
 
-We've also provided a barebone `indexProduction.html`, to serve your bundle.
+## 💪 How to contribute
 
-```sh
-npm install webpack webpack-cli
-# rename file
-mv UNUSED_webpack.config.js webpack.config.js
-# call webpack to bundle for production
-./node_modules/.bin/webpack
-open indexProduction.html
-```
+1. Fork the project.
+2. Create a new branch with your changes: git checkout -b my-feature
+3. Save your changes and create a commit message telling you what you did: git commit -m" feature: My new feature "
+4. Submit your changes: git push origin my-feature
+5. Open a pull request!
 
-# Handle Routing Yourself
+When the merge of your pull request is done, you can delete your branch.
 
-To serve the files, this template uses a minimal dependency called `moduleserve`. A URL such as `localhost:8000/scores/john` resolves to the file `scores/john.html`. If you'd like to override this and handle URL resolution yourself, change the `server` command in `package.json` from `moduleserve ./ --port 8000` to `moduleserve ./ --port 8000 --spa` (for "single page application"). This will make `moduleserve` serve the default `index.html` for any URL. Since `index.html` loads `Index.bs.js`, you can grab hold of the URL in the corresponding `Index.re` and do whatever you want.
+You can send me as many PR's as you want, I will be honored to review and accept them!
 
-By the way, ReasonReact comes with a small [router](https://reasonml.github.io/reason-react/docs/en/router) you might be interested in.
+---
+
+## 🦸 Author
+
+
+ <img style="border-radius: 50%;" src="https://avatars0.githubusercontent.com/u/62674726?s=460&u=1c4408eb9492a7bf31a18b0a17f8ed7c444ab56b&v=4" width="100px;" alt="Tiago Vidal"/>
+ <br />
+ <sub><b>Tiago Vidal</b></sub>
+ <br />
+
+[![Twitter Badge](https://img.shields.io/twitter/url?label=%40tiagod3p&style=social&url=https://twitter.com/tiagod3p)](https://twitter.com/tiagod3p) [![Linkedin Badge](https://img.shields.io/badge/-Tiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tiagovidaldepaula/)](https://www.linkedin.com/in/tiagovidaldepaula/) 
+[![Gmail Badge](https://img.shields.io/badge/-tiagod3p@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tiagod3p@gmail.com)](mailto:tiagod3p@gmail.com)
+
+---
+
+## 📝 License
+
+This project is under the license MIT.
+
+Made with ❤️ by Tiago Vidal 👋🏽 [Get in touch!](https://www.linkedin.com/in/tiagovidaldepaula/)
+
+---
