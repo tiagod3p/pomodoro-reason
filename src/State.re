@@ -19,7 +19,7 @@ type action =
   | SetTime(phase, int);
 
 let initialState = {
-  seconds: 30,
+  seconds: 25 * 60,
   isTicking: false,
   workTime: 25,
   playTime: 5,
@@ -35,13 +35,25 @@ let reducer = (state, action) => {
       ? {...state, seconds: state.seconds - 1} : state
   | Reset =>
     switch (state.currentPhase) {
-    | Work => {...state, seconds: state.workTime * 60}
-    | Play => {...state, seconds: state.playTime * 60}
+    | Work => {...state, isTicking: false, seconds: state.workTime * 60}
+    | Play => {...state, isTicking: false, seconds: state.playTime * 60}
     }
   | SetTime(phase, minutes) =>
     switch (phase) {
-    | Work => {...state, workTime: minutes}
-    | Play => {...state, playTime: minutes}
+    | Work => {
+        ...state,
+        workTime: minutes,
+        seconds:
+          state.currentPhase === Work && !state.isTicking
+            ? minutes * 60 : state.seconds,
+      }
+    | Play => {
+        ...state,
+        playTime: minutes,
+        seconds:
+          state.currentPhase === Play && !state.isTicking
+            ? minutes * 60 : state.seconds,
+      }
     }
   | TogglePhase =>
     switch (state.currentPhase) {
@@ -60,4 +72,7 @@ let reducer = (state, action) => {
     }
   };
 };
+
+
+
 
